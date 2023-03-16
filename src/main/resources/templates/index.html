@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        text-align: center;
+      }
+      table {
+        margin: auto;
+      }
+    </style>
+    <title>Home</title>
+  </head>
+  <body>
+    <form method="post" action="/api">
+      <h1>Click button below to post quotation...</h1>
+      <p>Item name:</p>
+      <input type="text" name="name" id="name" required />
+      <p>Item price:</p>
+      <input type="text" name="price" id="price" required />
+      <p>Username:</p>
+      <input type="text" name="username" id="username" required />
+      <br />
+      <br />
+      <div>
+        <button type="submit">Post</button>
+      </div>
+    </form>
+    <br /><br />
+    <hr />
+    <form action="/quotations" method="get">
+      <h1>Click button below to get quotations...</h1>
+      <button type="submit">Get</button>
+    </form>
+  </body>
+</html>
