@@ -20,7 +20,7 @@ public class QuotationController {
 
     @GetMapping
     public String postQuotation(Model model) throws IOException {
-        Quotation quotation = quoSvc.getQuotation().get();
+        Quotation quotation = quoSvc.getQuotations().get();
         model.addAttribute("quotation", quotation);
         model.addAttribute("items", quotation.getItems());
         return "quotation";
