@@ -19,7 +19,7 @@ public class QuotationController {
     private QuotationService quoSvc;
 
     @GetMapping
-    public String postQuotation(Model model) throws IOException {
+    public String getQuotations(Model model) throws IOException {
         Quotation quotation = quoSvc.getQuotations().get();
         model.addAttribute("quotation", quotation);
         model.addAttribute("items", quotation.getItems());
